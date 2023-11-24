@@ -1,17 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
-function App() {
+const App = () => {
   return (
-    <div className='AppContainer'>
-      <form className='note-form'>
-        <input placeholder='Title' required />
-          <textarea placeholder='Content' rows={10} required />
-          <button type='submit'>Add Note</button>
+    <div className="app-container">
+      <form className="note-form">
+        <input placeholder="Title" required />
+        <textarea placeholder="Content" rows={10} required />
+
+        <button type="submit">Add Note</button>
       </form>
-      <div className='notes-grid'>
-        <div className='notes-item'>
-          <div className='notes-header'>
+      <div className="notes-grid">
+        <div className="note-item">
+          <div className="notes-header">
             <button>x</button>
           </div>
           <h2>Note Title</h2>
@@ -20,6 +20,6 @@ function App() {
       </div>
     </div>
   );
-}
+};
 
 export default App;
